@@ -1,0 +1,525 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.resonancehyderabad.ess"
+4    android:versionCode="37"
+5    android:versionName="1.0.17" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\tejas\Downloads\attendence (1)\attendence\android\app\src\main\AndroidManifest.xml:4:5-66
+11-->C:\Users\tejas\Downloads\attendence (1)\attendence\android\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.WAKE_LOCK" />
+12-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-68
+12-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-65
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+13-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-79
+13-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-76
+14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+14-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-77
+14-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:13:22-74
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-81
+15-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:9:22-78
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-66
+16-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:10:22-63
+17    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+17-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:5-81
+17-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:11:22-78
+18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+18-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:5-79
+18-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:12:22-76
+19
+20    <queries>
+20-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-13:15
+21        <intent>
+21-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-12:18
+22            <action android:name="android.support.customtabs.action.CustomTabsService" />
+22-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-90
+22-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:11:21-87
+23        </intent>
+24    </queries> <!-- Required by older versions of Google Play services to create IID tokens -->
+25    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+25-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:28:5-82
+25-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:28:22-79
+26
+27    <permission
+27-->[androidx.core:core:1.10.1] C:\Users\tejas\.gradle\caches\transforms-3\04d6a557157d9a6b2c52aff1257c2a75\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+28        android:name="com.resonancehyderabad.ess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.10.1] C:\Users\tejas\.gradle\caches\transforms-3\04d6a557157d9a6b2c52aff1257c2a75\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.10.1] C:\Users\tejas\.gradle\caches\transforms-3\04d6a557157d9a6b2c52aff1257c2a75\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.resonancehyderabad.ess.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.10.1] C:\Users\tejas\.gradle\caches\transforms-3\04d6a557157d9a6b2c52aff1257c2a75\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.10.1] C:\Users\tejas\.gradle\caches\transforms-3\04d6a557157d9a6b2c52aff1257c2a75\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+32    <!--
+33 The INTERNET permission is required for development. Specifically,
+34         the Flutter tool needs it to communicate with the running application
+35         to allow setting breakpoints, to provide hot reload, etc.
+36    -->
+37    <application
+38        android:name="android.app.Application"
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.10.1] C:\Users\tejas\.gradle\caches\transforms-3\04d6a557157d9a6b2c52aff1257c2a75\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+40        android:debuggable="true"
+41        android:icon="@mipmap/ic_launcher"
+42        android:label="Reso Bridge - Staff" >
+43        <activity
+44            android:name="com.resonancehyderabad.ess.MainActivity"
+45            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+46            android:exported="true"
+47            android:hardwareAccelerated="true"
+48            android:launchMode="singleTop"
+49            android:theme="@style/LaunchTheme"
+50            android:windowSoftInputMode="adjustResize" >
+51
+52            <!--
+53                 Specifies an Android theme to apply to this Activity as soon as
+54                 the Android process has started. This theme is visible to the user
+55                 while the Flutter UI initializes. After that, this theme continues
+56                 to determine the Window background behind the Flutter UI.
+57            -->
+58            <meta-data
+59                android:name="io.flutter.embedding.android.NormalTheme"
+60                android:resource="@style/NormalTheme" />
+61
+62            <intent-filter>
+63                <action android:name="android.intent.action.MAIN" />
+64:
+65                android:exported=”true”
+66                <category android:name="android.intent.category.LAUNCHER" />
+67:
+68                android:exported=”true”
+69            </intent-filter>
+70        </activity>
+71        <!--
+72             Don't delete the meta-data below.
+73             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+74        -->
+75        <meta-data
+76            android:name="flutterEmbedding"
+77            android:value="2" />
+78
+79        <service
+79-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-19:72
+80            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+80-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-107
+81            android:exported="false"
+81-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+82            android:permission="android.permission.BIND_JOB_SERVICE" />
+82-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-69
+83        <service
+83-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:20:9-26:19
+84            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+84-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-97
+85            android:exported="false" >
+85-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-37
+86            <intent-filter>
+86-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+87                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+87-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+87-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+88            </intent-filter>
+89        </service>
+90
+91        <receiver
+91-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:28:9-35:20
+92            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+92-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:29:13-98
+93            android:exported="true"
+93-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-36
+94            android:permission="com.google.android.c2dm.permission.SEND" >
+94-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-73
+95            <intent-filter>
+95-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+96                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+96-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+96-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+97            </intent-filter>
+98        </receiver>
+99
+100        <service
+100-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:9-41:19
+101            android:name="com.google.firebase.components.ComponentDiscoveryService"
+101-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:37:18-89
+102            android:directBootAware="true"
+102-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+103            android:exported="false" >
+103-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:54:13-37
+104            <meta-data
+104-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-40:85
+105                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+105-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:39:17-128
+106                android:value="com.google.firebase.components.ComponentRegistrar" />
+106-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:40:17-82
+107            <meta-data
+107-->[:firebase_core] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+108                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+108-->[:firebase_core] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+109                android:value="com.google.firebase.components.ComponentRegistrar" />
+109-->[:firebase_core] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+110            <meta-data
+110-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:55:13-57:85
+111                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+111-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:56:17-119
+112                android:value="com.google.firebase.components.ComponentRegistrar" />
+112-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:57:17-82
+113            <meta-data
+113-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\tejas\.gradle\caches\transforms-3\becf0e27c1831ae6e885c594c6dabd66\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+114                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+114-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\tejas\.gradle\caches\transforms-3\becf0e27c1831ae6e885c594c6dabd66\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+115                android:value="com.google.firebase.components.ComponentRegistrar" />
+115-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\tejas\.gradle\caches\transforms-3\becf0e27c1831ae6e885c594c6dabd66\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+116            <meta-data
+116-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\tejas\.gradle\caches\transforms-3\c0f77204d8a02546cdb4e8e5fafe8f9a\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:17:13-19:85
+117                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+117-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\tejas\.gradle\caches\transforms-3\c0f77204d8a02546cdb4e8e5fafe8f9a\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:18:17-127
+118                android:value="com.google.firebase.components.ComponentRegistrar" />
+118-->[com.google.firebase:firebase-installations:17.1.3] C:\Users\tejas\.gradle\caches\transforms-3\c0f77204d8a02546cdb4e8e5fafe8f9a\transformed\jetified-firebase-installations-17.1.3\AndroidManifest.xml:19:17-82
+119            <meta-data
+119-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\tejas\.gradle\caches\transforms-3\8535aaadb4fb28d7a973b45f11a020f3\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+120                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+120-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\tejas\.gradle\caches\transforms-3\8535aaadb4fb28d7a973b45f11a020f3\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+121                android:value="com.google.firebase.components.ComponentRegistrar" />
+121-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\tejas\.gradle\caches\transforms-3\8535aaadb4fb28d7a973b45f11a020f3\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+122        </service>
+123
+124        <provider
+124-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:43:9-47:38
+125            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+125-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:44:13-102
+126            android:authorities="com.resonancehyderabad.ess.flutterfirebasemessaginginitprovider"
+126-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:45:13-88
+127            android:exported="false"
+127-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-37
+128            android:initOrder="99" />
+128-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-35
+129        <provider
+129-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-18:20
+130            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+130-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-82
+131            android:authorities="com.resonancehyderabad.ess.flutter.image_provider"
+131-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-74
+132            android:exported="false"
+132-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-37
+133            android:grantUriPermissions="true" >
+133-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-47
+134            <meta-data
+134-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-17:75
+135                android:name="android.support.FILE_PROVIDER_PATHS"
+135-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:17-67
+136                android:resource="@xml/flutter_image_picker_file_paths" />
+136-->[:image_picker_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-72
+137        </provider>
+138
+139        <activity
+139-->[:url_launcher_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-13:74
+140            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+140-->[:url_launcher_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-74
+141            android:exported="false"
+141-->[:url_launcher_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-37
+142            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+142-->[:url_launcher_android] C:\Users\tejas\Downloads\attendence (1)\attendence\build\url_launcher_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-71
+143
+144        <receiver
+144-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-18:40
+145            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+145-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-91
+146            android:exported="false" />
+146-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-37
+147        <receiver
+147-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:19:9-21:40
+148            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+148-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-97
+149            android:exported="false" />
+149-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:21:13-37
+150        <receiver
+150-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:22:9-31:20
+151            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+151-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-101
+152            android:exported="false" >
+152-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+153            <intent-filter>
+153-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:25:13-30:29
+154                <action android:name="android.intent.action.BOOT_COMPLETED" />
+154-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:17-79
+154-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:26:25-76
+155                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+155-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-84
+155-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-81
+156                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+156-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:17-82
+156-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:28:25-79
+157                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+157-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:17-82
+157-->[:flutter_local_notifications] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_local_notifications\intermediates\merged_manifest\debug\AndroidManifest.xml:29:25-79
+158            </intent-filter>
+159        </receiver>
+160
+161        <activity
+161-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:16:9-20:47
+162            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+162-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:17:13-104
+163            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+163-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:18:13-137
+164            android:exported="false"
+164-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:19:13-37
+165            android:theme="@style/AppTheme" />
+165-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:20:13-44
+166        <activity
+166-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-24:55
+167            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+167-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-112
+168            android:exported="false"
+168-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-37
+169            android:theme="@style/ThemeTransparent" />
+169-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-52
+170        <activity
+170-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-28:55
+171            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+171-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-106
+172            android:exported="false"
+172-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:27:13-37
+173            android:theme="@style/ThemeTransparent" />
+173-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:28:13-52
+174        <activity
+174-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:29:9-33:55
+175            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+175-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-126
+176            android:exported="false"
+176-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:31:13-37
+177            android:launchMode="singleInstance"
+177-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-48
+178            android:theme="@style/ThemeTransparent" />
+178-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:33:13-52
+179        <activity
+179-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:34:9-38:55
+180            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+180-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:35:13-120
+181            android:exported="false"
+181-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:36:13-37
+182            android:launchMode="singleInstance"
+182-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:37:13-48
+183            android:theme="@style/ThemeTransparent" />
+183-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:38:13-52
+184
+185        <receiver
+185-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:40:9-43:40
+186            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+186-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:41:13-111
+187            android:enabled="true"
+187-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:42:13-35
+188            android:exported="false" />
+188-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:43:13-37
+189
+190        <meta-data
+190-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:45:9-47:36
+191            android:name="io.flutter.embedded_views_preview"
+191-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:46:13-61
+192            android:value="true" />
+192-->[:flutter_inappwebview] C:\Users\tejas\Downloads\attendence (1)\attendence\build\flutter_inappwebview\intermediates\merged_manifest\debug\AndroidManifest.xml:47:13-33
+193
+194        <activity
+194-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:23:9-27:75
+195            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+195-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:24:13-93
+196            android:excludeFromRecents="true"
+196-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:25:13-46
+197            android:exported="false"
+197-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:26:13-37
+198            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+198-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:27:13-72
+199        <!--
+200            Service handling Google Sign-In user revocation. For apps that do not integrate with
+201            Google Sign-In, this service will never be started.
+202        -->
+203        <service
+203-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:33:9-37:51
+204            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+204-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:34:13-89
+205            android:exported="true"
+205-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:35:13-36
+206            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+206-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:36:13-107
+207            android:visibleToInstantApps="true" />
+207-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\tejas\.gradle\caches\transforms-3\5ba679d24a334e31b7434051c908fc2c\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:37:13-48
+208
+209        <receiver
+209-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:31:9-38:20
+210            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+210-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:32:13-78
+211            android:exported="true"
+211-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:33:13-36
+212            android:permission="com.google.android.c2dm.permission.SEND" >
+212-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:34:13-73
+213            <intent-filter>
+213-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:32:13-34:29
+214                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+214-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:17-81
+214-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:33:25-78
+215            </intent-filter>
+216        </receiver>
+217        <!--
+218             FirebaseMessagingService performs security checks at runtime,
+219             but set to not exported to explicitly avoid allowing another app to call it.
+220        -->
+221        <service
+221-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:44:9-51:19
+222            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+222-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:45:13-82
+223            android:directBootAware="true"
+223-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:46:13-43
+224            android:exported="false" >
+224-->[com.google.firebase:firebase-messaging:23.2.0] C:\Users\tejas\.gradle\caches\transforms-3\a46444761fefc96a74b121a1782f7ede\transformed\jetified-firebase-messaging-23.2.0\AndroidManifest.xml:47:13-37
+225            <intent-filter android:priority="-500" >
+225-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-25:29
+226                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+226-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:17-78
+226-->[:firebase_messaging] C:\Users\tejas\Downloads\attendence (1)\attendence\build\firebase_messaging\intermediates\merged_manifest\debug\AndroidManifest.xml:24:25-75
+227            </intent-filter>
+228        </service>
+229
+230        <activity
+230-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tejas\.gradle\caches\transforms-3\3c97c047949f79f03957d4b1ccd0995e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+231            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+231-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tejas\.gradle\caches\transforms-3\3c97c047949f79f03957d4b1ccd0995e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+232            android:exported="false"
+232-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tejas\.gradle\caches\transforms-3\3c97c047949f79f03957d4b1ccd0995e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+233            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+233-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\tejas\.gradle\caches\transforms-3\3c97c047949f79f03957d4b1ccd0995e\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+234
+235        <provider
+235-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+236            android:name="com.google.firebase.provider.FirebaseInitProvider"
+236-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+237            android:authorities="com.resonancehyderabad.ess.firebaseinitprovider"
+237-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+238            android:directBootAware="true"
+238-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+239            android:exported="false"
+239-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+240            android:initOrder="100" />
+240-->[com.google.firebase:firebase-common:20.3.3] C:\Users\tejas\.gradle\caches\transforms-3\5dfb34d6ecc3d007fa56edc4531c9cc3\transformed\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+241
+242        <meta-data
+242-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\tejas\.gradle\caches\transforms-3\8aa0c393334a0e4baa1d9ced37a63e6a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+243            android:name="com.google.android.gms.version"
+243-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\tejas\.gradle\caches\transforms-3\8aa0c393334a0e4baa1d9ced37a63e6a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+244            android:value="@integer/google_play_services_version" />
+244-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\tejas\.gradle\caches\transforms-3\8aa0c393334a0e4baa1d9ced37a63e6a\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+245
+246        <provider
+246-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+247            android:name="androidx.startup.InitializationProvider"
+247-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+248            android:authorities="com.resonancehyderabad.ess.androidx-startup"
+248-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+249            android:exported="false" >
+249-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+250            <meta-data
+250-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+251                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+251-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+252                android:value="androidx.startup" />
+252-->[androidx.emoji2:emoji2:1.2.0] C:\Users\tejas\.gradle\caches\transforms-3\d1808dc98c390c1b6916cb72166c0cd6\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+253            <meta-data
+253-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\tejas\.gradle\caches\transforms-3\97c95e8c1a6b605583de2deef27beea9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:29:13-31:52
+254                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+254-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\tejas\.gradle\caches\transforms-3\97c95e8c1a6b605583de2deef27beea9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:30:17-78
+255                android:value="androidx.startup" />
+255-->[androidx.lifecycle:lifecycle-process:2.6.1] C:\Users\tejas\.gradle\caches\transforms-3\97c95e8c1a6b605583de2deef27beea9\transformed\jetified-lifecycle-process-2.6.1\AndroidManifest.xml:31:17-49
+256            <meta-data
+256-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+257                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+257-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+258                android:value="androidx.startup" />
+258-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+259        </provider>
+260
+261        <uses-library
+261-->[androidx.window:window:1.0.0-beta04] C:\Users\tejas\.gradle\caches\transforms-3\eb6d310367e2dfd8469114305064b28f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+262            android:name="androidx.window.extensions"
+262-->[androidx.window:window:1.0.0-beta04] C:\Users\tejas\.gradle\caches\transforms-3\eb6d310367e2dfd8469114305064b28f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+263            android:required="false" />
+263-->[androidx.window:window:1.0.0-beta04] C:\Users\tejas\.gradle\caches\transforms-3\eb6d310367e2dfd8469114305064b28f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+264        <uses-library
+264-->[androidx.window:window:1.0.0-beta04] C:\Users\tejas\.gradle\caches\transforms-3\eb6d310367e2dfd8469114305064b28f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+265            android:name="androidx.window.sidecar"
+265-->[androidx.window:window:1.0.0-beta04] C:\Users\tejas\.gradle\caches\transforms-3\eb6d310367e2dfd8469114305064b28f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+266            android:required="false" />
+266-->[androidx.window:window:1.0.0-beta04] C:\Users\tejas\.gradle\caches\transforms-3\eb6d310367e2dfd8469114305064b28f\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+267
+268        <receiver
+268-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+269            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+269-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+270            android:directBootAware="false"
+270-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+271            android:enabled="true"
+271-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+272            android:exported="true"
+272-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+273            android:permission="android.permission.DUMP" >
+273-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+274            <intent-filter>
+274-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+275                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+275-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+276            </intent-filter>
+277            <intent-filter>
+277-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+278                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+278-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+279            </intent-filter>
+280            <intent-filter>
+280-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+281                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+281-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+281-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+282            </intent-filter>
+283            <intent-filter>
+283-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+284                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+284-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+284-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\tejas\.gradle\caches\transforms-3\f107a7015bd0f44a8e68bc50d9196306\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+285            </intent-filter>
+286        </receiver>
+287
+288        <service
+288-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\245b82397ee6d5d173e21aeb0ee227e3\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+289            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+289-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\245b82397ee6d5d173e21aeb0ee227e3\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+290            android:exported="false" >
+290-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\245b82397ee6d5d173e21aeb0ee227e3\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+291            <meta-data
+291-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\245b82397ee6d5d173e21aeb0ee227e3\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+292                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+292-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\245b82397ee6d5d173e21aeb0ee227e3\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+293                android:value="cct" />
+293-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\245b82397ee6d5d173e21aeb0ee227e3\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+294        </service>
+295        <service
+295-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+296            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+296-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+297            android:exported="false"
+297-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+298            android:permission="android.permission.BIND_JOB_SERVICE" >
+298-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+299        </service>
+300
+301        <receiver
+301-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+302            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+302-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+303            android:exported="false" />
+303-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\tejas\.gradle\caches\transforms-3\44c937b1906b23ae3373343e08584305\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+304    </application>
+305
+306</manifest>
